@@ -67,7 +67,6 @@ li {
     padding: 2rem 1.5rem;
     /* background-color: var(--light-grayish-blue); */
 }
-
 .nav-bar {
     display: flex;
     align-items: center;
@@ -82,11 +81,9 @@ li {
 .nav-item a:hover {
     color: var(--bright-blue);
 }
-
 .nav-item a {
     color: var(--desaturated-blue);
 }
-
 .header-container .logo {
     width: 100px;
 }
@@ -101,34 +98,29 @@ li {
     margin-top: 3.5rem;
     padding: 0 1.5rem;
 }
-
 .hero-container .text-desc h1 {
     text-align: center;
     font-size: 1.6rem;
     margin-top: 2.5rem;
 }
-
 .hero-container .text-desc p {
     text-align: center;
     color: var(--desaturated-blue);
     margin-top: 2rem;
 }
-
 .email-info {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     gap: 1rem;
 }
-
 .email-info .email-add {
     padding: 1rem 1.5rem;
     font-size: .8rem;
     border: .3px solid black;
-    width: 80vw;  
+    /* width: 80vw;   */
     border-radius: .2rem;
 }
-
 .cta {
     padding: 1rem 1.5rem;
     background-color: var(--bright-blue);
@@ -152,28 +144,26 @@ li {
     background-color: var(--light-grayish-blue);
     margin-top: 6rem;
     padding: 2rem 1.3rem;
+    position: relative;
 }
-
 .productive .pro-desc {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .productive .pro-desc h2 {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
     margin-top: 3rem;
 }
-
 .productive .pro-desc p {
     text-align: left;
     margin: 1.3rem 0;
     color: var(--very-dark-blue);
 }
-
 .btn-container {
     border-bottom: 1.5px solid var(--bright-blue);
+    position: absolute;
 }
 .productive .pro-desc .pro-btn {
     color: var(--bright-blue);
@@ -181,30 +171,25 @@ li {
 .btn-container:hover {
     filter: brightness(50%);
 }
-
 .review {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: column;
     background-color: var(--light-grayish-blue);
     -webkit-box-shadow: 0px 0px 12px 5px rgba(221, 215, 215, 0.39);
     box-shadow: 0px 0px 12px 5px rgba(221, 215, 215, 0.39);
-    margin-top: 3rem;
+    margin-top: 5rem;
     border-radius: .3rem;
     padding: 1rem;
     color: var(--very-dark-blue);
     background-image: url(./img/icon-quotes.svg);
     background-repeat: no-repeat;
     background-position: 5% 3%;
-    background-size: 20px;
+    margin-bottom: 2rem;
 }
-
 .review p {
     line-height: 1.5rem;
     font-size: .9rem;
 }
-
 .client-info {
     display: flex;
     align-items: center;
@@ -212,16 +197,13 @@ li {
     flex-direction: row;
     gap: 1rem;
 }
-
 .review .client-info img {
     border-radius: 50%;
     width: 40px;
 }
-
 .info h3 {
     font-size: .9rem;
 }
-
 .info span {
     font-size: .8rem;
 }
@@ -249,7 +231,6 @@ li {
     margin-bottom: 1.5rem;
 }
 /*end early acess section */
-
 .footer-container {
     background-color: var(--very-dark-blue);
     display: flex;
@@ -264,20 +245,15 @@ li {
 .all-info .contact-add  a,
 .all-links .links a {
     color: var(--light-grayish-blue);
-    font-size: 1.3rem;
+      font-size: 1.3rem;
 }
-.all-info .contact-add .phone:hover,
-.all-info .contact-add .email:hover {
-    text-decoration: underline;
-    color: var(--light-grayish-blue);
-} 
 .all-info .contact-add .phone img,
 .all-info .contact-add .email img {
     margin-right: 1rem;
     margin-top: 1rem;
 }
 .all-links {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 .all-links .links a {
     font-size: 1.3rem;
@@ -311,3 +287,121 @@ li {
     color: var(--bright-blue);
     border: 1px solid var(--bright-blue);
 }
+/* end footer section */
+
+/* attribution */
+    .attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--very-dark-blue);
+    }
+.attribution a {
+    color: var(--bright-blue);
+    }
+    /*end attribution */
+
+    /* media query */
+    @media only screen and (min-width: 920px) {
+        .hero-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        }
+        .illustratation {
+        flex: 1;
+        max-width: 600px;
+        padding: 0 1rem;
+        }
+        .text-desc {
+        max-width: 600px;
+        flex: 1;
+        padding: 0 1.5rem;
+        }
+        .hero-container .text-desc h1 {
+        text-align: left;
+        font-size: 2rem;
+        padding-right: 4rem;
+        }
+        .hero-container .text-desc p {
+        text-align: left;      
+        }
+        .email-info {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 1rem;
+        }
+        .email-info .email-add {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        width: 30vw;
+        }
+        .productive {
+        flex-direction: row-reverse;
+        padding: 0 2.5rem;
+        }
+        .pro-img {
+        flex: 1;
+        max-width: 600px;
+        padding: 0 1.5rem;
+        }
+        .pro-desc {
+        flex: 1;
+        max-width: 650px;
+        padding: 0 1.5rem;
+        }
+        .productive .pro-desc {
+        display: flex;
+        align-self: flex-start;
+        }
+        .productive .pro-desc h2 {
+        /* font-size: 1.4rem; */
+        align-items: flex-start;
+        }
+       .productive .pro-desc p {
+        margin: .5rem 0;
+        }
+        .review {
+        max-width: 320px;
+        }
+        .early-access {
+        display: flex;
+        flex-direction: row;
+        }
+        .early-access-text {
+        flex: 1;
+        max-width: 600px;
+        padding-right: 3rem;
+        }
+        .email-info {
+        flex: 1;
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        }
+        .early-access .email-add {
+        width: 40vw;
+        }
+        .early-access .cta {
+        width: 30vw;
+        }
+        .early-access-text h4, p {
+        text-align: left;
+        }
+        .footer-container .all-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        }
+        .all-links {
+        display: flex;
+        gap: 4rem;
+        }
+        .all-info .contact-add {
+            margin-top: 1rem;
+        }
+    }
+    /* end media query */
