@@ -59,7 +59,6 @@ a {
 li {
     list-style: none;
 }
-
 /* end reset */
 
 /* header section */
@@ -145,7 +144,6 @@ li {
     position: relative;
 }
 .productive picture {
-    /* background-image: url(./img/bg-curve-mobile.svg); */
     transform: scale(1.06);
     bottom: 99.5%;
     position: absolute;
@@ -179,8 +177,8 @@ li {
     display: flex;
     flex-direction: column;
     background-color: var(--light-grayish-blue);
-    -webkit-box-shadow: 0px 0px 12px 5px rgba(221, 215, 215, 0.39);
-    box-shadow: 0px 0px 12px 5px rgba(221, 215, 215, 0.39);
+    -webkit-box-shadow: 0px 0px 12px 5px hsla(0, 8%, 85%, 0.39);
+    box-shadow: 0px 0px 12px 5px hsla(0, 8%, 85%, 0.39);
     margin-top: 5rem;
     border-radius: .3rem;
     padding: 1rem;
