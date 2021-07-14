@@ -238,7 +238,7 @@ li {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 3rem 2rem;
+    padding: 7rem 2rem;
 }
 .footer-logo {
     filter: brightness(0) invert(1);
@@ -309,7 +309,7 @@ li {
         align-items: center;
         justify-content: center;
         flex-direction: row-reverse;
-        margin-bottom: 15rem;
+        margin-bottom: 18rem;
         }
         .illustratation {
         flex: 1;
@@ -371,6 +371,7 @@ li {
         .early-access {
         display: flex;
         flex-direction: row;
+        padding: 6rem 1.5rem;
         }
         .early-access-text {
         flex: 1;
