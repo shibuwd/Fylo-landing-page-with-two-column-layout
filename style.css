@@ -39,7 +39,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,
+h1:focus-within,
 h2,
 h3,
 h4,
