@@ -39,7 +39,7 @@ body {
     overflow-x: hidden;
 }
 
-h1:focus-within,
+h1,
 h2,
 h3,
 h4,
@@ -63,28 +63,31 @@ li {
 
 /* header section */
 .header-container {
-    padding: 2rem 2.5rem;
+    padding: 2rem 0rem;
 }
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
+    gap: 1rem;
 }
 .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    font-size: 1rem;
 }
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item a:focus {
     color: var(--bright-blue);
 }
 .nav-item a {
     color: var(--desaturated-blue);
 }
 .header-container .logo {
-    width: 100px;
+    width: 90px;
 }
 /* end header section */
 
@@ -171,7 +174,8 @@ li {
 .productive .pro-desc .pro-btn {
     color: var(--bright-blue);
 }
-.btn-container:hover {
+.btn-container:hover,
+.btn-container:focus {
     filter: brightness(50%);
 }
 .review {
@@ -221,7 +225,8 @@ li {
     background-color: var(--desaturated-blue);
     padding: 2rem 1.5rem;
 }
-.cta:hover {
+.cta:hover,
+.cta:focus {
     opacity: .7;
 }
 .early-access-text, h4, p {
@@ -249,7 +254,7 @@ li {
 .all-info .contact-add  a,
 .all-links .links a {
     color: var(--light-grayish-blue);
-      font-size: 1.3rem;
+      font-size: 1.1rem;
 }
 .all-info .contact-add .phone img,
 .all-info .contact-add .email img {
@@ -260,7 +265,7 @@ li {
     margin-top: 2rem;
 }
 .all-links .links a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: all .3s ease;
 }
 .all-links .links ul li {
@@ -277,7 +282,8 @@ li {
     margin-top: 3.5rem;
 }
 .social-icons i {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
     padding: 1rem;
     border: 1px solid white;
     border-radius: 15rem;
@@ -306,6 +312,19 @@ li {
 
     /* media query */
     @media only screen and (min-width: 920px) {
+        .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 6rem;
+        gap: rem;
+        }
+        .header-container .logo {
+        width: 120px;
+        }
+        .nav-item a {
+        font-size: 1.4rem;
+        }
         .hero-container {
         display: flex;
         align-items: center;
